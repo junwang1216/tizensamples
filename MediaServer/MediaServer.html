@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width">
+
+        <title>Media Server</title>
+
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <link rel="stylesheet" type="text/css" href="css/demoApps.css"/>
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.0.min.css" />
+        <style type="text/css">
+            #media_table {
+                width: 100%;
+            }
+            #media_table tr {
+                line-height: 2em;
+            }
+            ul li {
+                margin-top: 10px;
+                cursor: pointer;
+                border-bottom: 1px solid #000000;
+            }
+            #detailList label {
+                font-weight: bold;
+                padding-right: 10px;
+            }
+        </style>
+        <script src="js/thirdparty/jquery-1.6.4.min.js"></script>
+        <script src="js/thirdparty/jquery.mobile-1.0.min.js"></script>
+        <script src="js/main.js"></script>
+    </head>
+
+    <body>
+        <div data-role="header">
+            <h1 id="main_page_title">Media Server</h1>
+        </div>
+
+        <div data-role="content">
+            <div id="list">
+            <table data-role="table" id="media_table" class="ui-body-d">
+                <thead>
+                    <tr class="ui-bar-d">
+                        <th>Type</th>
+                        <th>DisplayName</th>
+                        <th>Size</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <div>
+                <p>Select the following strings or enter text directly, and then click "Filter" button.</p>
+                <ul id="filterSelect">
+                    <li>(MIMEType = "image/jpg" or MIMEType = "audio/x-msaudio") and Type = "image"</li>
+                    <li>DisplayName contains "mediaserver_audio"</li>
+                    <li>Album exists true</li>
+                    <li>*</li>
+                </ul>
+                <p>
+                    <input type="text" id="filterText" />
+                </p>
+                <p>
+                    <input type="button" id="doFiltering" value="Filter" />
+                </p>
+
+                <div id="information"></div>
+            </div>
+            </div>
+            <div id="detail" style="display:none;">
+            <div id="detailList"></div>
+            <p>
+                <input type="button" id="close" value="Close" />
+            </p>
+            </div>
+        </div>
+
+        <br><br><br><br><br>
+        <a href="javascript:backAppsHome();" data-role="button" data-icon="home" style="color: #FF0000;">Exit Application</a>
+
+        <footer>
+            <p>&copy; 2014 Intel. All rights reserved.</p>
+        </footer>
+    </body>
+</html>

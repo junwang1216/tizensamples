@@ -1,0 +1,218 @@
+textarea{
+       resize: none;
+}
+
+.number_indicator {
+    padding-left: 10px;
+    color: #222222;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.app_header {
+    position:fixed;
+}
+
+.operation_bar {
+    -moz-box-shadow: 0px 1px 21px 0px #ffffff;
+    -webkit-box-shadow: 0px 1px 21px 0px #ffffff;
+    box-shadow: 0px 1px 21px 0px #ffffff;
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #aaaaaa) );
+    background:-moz-linear-gradient( center top, #ededed 5%, #aaaaaa 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#aaaaaa');
+
+    border-left:0px;
+    border-right:0px;
+    border-top:0.5px solid;
+    border-bottom:0.5px solid;
+    border-color: #666666;
+    background-color:#aaaaaa;
+    width:100%;
+    height: 43px;
+}
+
+
+.operation_btn_left {
+    padding-top: 5px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+    background-color:#cccccc;
+    height: 36px;
+    width: 40px;
+    border-radius:9px;
+    border:1px solid #dddddd;
+}
+.operation_btn_left:hover {
+    background-color: #aaaaaa;
+}
+
+.operation_btn_left:active {
+    background-color: #eeeeee;
+}
+
+.operation_btn_right {
+    padding-top: 5px;
+    float: right;
+    text-align: center;
+    vertical-align: middle;
+    background-color:#cccccc;
+    height: 36px;
+    width: 40px;
+    border-radius:3px;
+    border:1px solid #dddddd;
+}
+.operation_btn_right:hover {
+    background-color: #aaaaaa;
+}
+
+.operation_btn_right:active {
+    background-color: #eeeeee;
+}
+
+.edit_form {
+     DISPLAY: none;
+     position: absolute;
+     left: 0px;
+     top: 0px;
+     width:100%;
+     height:100%;
+     text-align:center;
+     z-index: 800;
+     background-color: #dddddd;
+     font-size: 16px;
+}
+
+.edit_form_head {
+     padding-left: 5px;
+     text-align:center;
+     vertical-align: middle;
+     background-color: #aaaaaa;
+     font-size: 18px;
+     height:40px;
+     width:100%;
+}
+.edit_form_body {
+     padding-top: 0px;
+     padding-bottom: 0px;
+     padding-left: 5px;
+     padding-right: 5px;
+     text-align:center;
+     background-color: #dddddd;
+     font-size: 17px;
+     color: #333333;
+}
+
+.list_head {
+    background-color: #777777;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight:bold;
+    text-align: left;
+}
+
+.list_body {
+    font-size: 16px;
+    color: #333333;
+}
+
+.detail_page {
+    DISPLAY: none;
+    #position: absolute;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width:100%;
+    height:100%;
+    z-index: 800;
+    background-color: #dddddd;
+    padding-top:0%;
+    width:100%;
+}
+
+.detail_page_header {
+    padding-top: 0px;
+    padding-right: 1px;
+}
+
+.detail_page_body {
+     padding-top: 2px;
+     padding-bottom: 32px;
+     padding-left: 0;
+     padding-right 0:
+     text-align: left;
+     background-color: #ffffff;
+     margin: auto;
+     height: 58%;
+}
+
+.detail_page_footer {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    text-align: center;
+}
+
+.detai_item_name {
+    font-size: 20px;
+    text-align:left;
+    color: #888888;
+    padding-left: 5px;
+}
+
+.detai_item_value {
+    font-size: 22px;
+    text-align:left;
+    color: #555555;
+    padding-left: 7px;
+}
+
+.detai_page_ok_button {
+    width: 100px;
+    text-align: center;
+}
+
+.message_box {
+    font-size: 20px;
+    -moz-box-shadow: 2px 2px 5px #888888;
+    -webkit-box-shadow: 2px 2px 5px #888888;
+    box-shadow: 2px 2px 5px #888888;
+
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+    background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+
+    border-radius:8px;
+    border:1px solid #666666;
+    text-shadow:1px 1px 25px #eeeeee;
+    background-color: #dcdcdc;
+    padding: 8px;
+    width: 86%;
+    margin: 12px auto 12px auto;
+}
+
+.itemDeleteBtn {
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    float: right;
+    height: 15px;
+    line-height: 15px;
+    margin: 3px 10px 0 0;
+    padding: 0.6em;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    width: 30px;
+}
+
+a {
+    text-decoration:none;
+}
+
+a:hover {
+    color: #666666;
+}
+
+a:active {
+    color: #000000;
+}
+
