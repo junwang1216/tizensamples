@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <title>Speech</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/demoApps.css"/>
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.0.min.css" />
+    <style type="text/css">
+    </style>
+    <script src="js/thirdparty/jquery-1.6.4.min.js"></script>
+    <script src="js/thirdparty/jquery.mobile-1.0.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <div data-role="header">
+        <h1 id="main_page_title"> Speech </h1>
+    </div>
+
+    <div data-role="content">
+        <div id="speechRecognition">
+            <p id="speechInfo">Click on the direction button and listen speech broadcast.</p>
+            <div style="text-align: center;">
+                <canvas id="trackCanvas" width="480" height="300" style="border:1px solid #000000; margin-left: 5px;">
+                    Your browser does not support the HTML5 canvas tag.
+                </canvas>
+            </div>
+            <p style="text-align: center;">
+                <a id="trackForward" href="#" data-role="button" data-mini="true" data-inline="true">Forward</a>
+                <a id="trackLeft" href="#" data-role="button" data-mini="true" data-inline="true">Left</a>
+                <a id="trackStop" href="#" data-role="button" data-mini="true" data-inline="true" data-theme="a">Stop</a>
+                <a id="trackRight" href="#" data-role="button" data-mini="true" data-inline="true">Right</a>
+                <a id="trackBack" href="#" data-role="button" data-mini="true" data-inline="true">Back</a>
+            </p>
+            <p><strong>INFO:</strong><span id="trackError"></span></p>
+        </div>
+        <div id="speechSpeaking">
+            <p id="speechInfo">Click on the microphone icon and begin speaking for as long as you like.</p>
+            <table>
+                <tr>
+                    <td><textarea rows="4" cols="65" id="speechText" readonly="readonly"></textarea></td>
+                    <td><img id="speechMic" alt="Speaking" src="images/mic.gif"></td>
+                </tr>
+            </table>
+            <p><strong>INFO:</strong><span id="speechError"></span></p>
+        </div>
+    </div>
+
+    <br><br><br><br><br>
+    <a href="javascript:backAppsHome();" data-role="button" data-icon="home" style="color: #FF0000;">Exit Application</a>
+
+    <footer>
+        <p>&copy; 2014 Intel. All rights reserved.</p>
+    </footer>
+</body>
+</html>
